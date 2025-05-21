@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #1c2f2b;
+  color: #F1EEDB; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.logo {
+  width: 100%;
+  max-width: 350px; 
+  height: auto;    
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 1.3em;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.social {
+  margin-top: 25px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.social a {
+  color: #F1EEDB;
+  font-size: 2em;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social a:hover {
+  color: #EDEADA;
+  transform: scale(1.2);
+}
+
+.email {
+  margin-top: 20px;
+  font-size: 1em;
+  word-break: break-word;
+  opacity: 0.9;
+}
+
+#copy-btn {
+  background: none;
+  border: none;
+  color: #F1EEDB;
+  cursor: pointer;
+  margin-left: 8px;
+  font-size: 1em;
+}
+
+#copy-btn:hover {
+  color: #EDEADA;
+}
+
+#copy-msg {
+  margin-top: 5px;
+  font-size: 0.9em;
+  color: #EDEADA;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .logo {
+    max-width: 350px;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+}
